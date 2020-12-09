@@ -1,5 +1,41 @@
-$tipocolore: red;
+// variabili
+$coloreprimario: red;
+$coloresecondario: purple;
+$colorebordo: blue;
+$padding: 10px;
+$margine: 20px;
+
+
+// set up generale
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// body
 
 h1{
-    color: $tipocolore;
+    color: $coloreprimario;
+    margin: $margine;
+}
+
+p{
+    border: 2px solid $colorebordo;
+    margin: $margine;
+    color: $coloresecondario;
+    padding: $padding * 2;
+}
+
+input{
+    margin: $margine;
+    padding: $padding;
+    border: 2px solid $colorebordo;
+}
+
+button{
+    background-color: $coloreprimario;
+    border: 2px solid $colorebordo;
+    padding: $padding;
+    color: $coloresecondario;
 }
